@@ -1,27 +1,25 @@
-# Frobnicator
+# RustBall
 
 ## Autorzy
-- Andrzej Głuszak (gr 9, @agluszak na githubie)
-- Linus Torvalds (Uniwersytet Helsiński, @torvalds na githubie)
+- Daniel Mastalerz
 
 ## Opis
-Od zawsze chcieliśmy napisać grę komputerową.
-Frobnicator będzie to gra platformowa, w której chodzi o to, żeby...
-
-Z grubsza będziemy wzorować się na [tym tutorialu](https://dev.to/sbelzile/rust-platformer-part-1-bevy-and-ecs-2pci).
+![HaxBall](https://i.ytimg.com/vi/JkAptaaFSrE/maxresdefault.jpg)
+RustBall będzie połączeniem piłki nożnej i cymbergaja. Na boisku każdy gracz jest reprezentowany przez kulkę, celem gracza jest zdobycie bramek i końcowe wygranie meczu. Gra będzie wzorowana na grze [HaxBall](https://www.haxball.com) napisanej w języku Haxe.
 
 ## Funkcjonalność
-- Generowanie map
-- Strzelanie
-- AI dla wrogów (bardziej rozbudowane niż w tutorialu)
-- Możliwość zapisywania i wczytywania stanu gry
-- Punktacja
+- możliwość gry na jednym komputerze przez dwie osoby (z różnymi klawiszami do sterowania)
+- różne typy boisk
+- menu, zapisywanie stanu gry
+- zapisywanie profilu gracza, statystyki
+- możliwośc gry przez internet, z więcej niż jednym graczem w każdej drużynie, lobby do szukania meczu
 
 ## Propozycja podziału na części
-W pierwszej części stworzymy grę opartą na tutorialu (z lepszym AI) i jedną zahardcodowaną planszą.
+W pierwszej części zaimplenetuję 4 pierwsze punkty, czyli wersja gry bez potrzeby łączenia się z siecią
 
-W drugiej części dodamy do tego losowy generator map, zapisywanie/wczytywanie stanu gry oraz system punktacji.
+W drugiej części punkt piąty - możliwość gry przez internet.
 
 ## Biblioteki
 - Bevy
-- może coś do serializacji danych? (czy mógłby Pan coś polecić?)
+- coś do obsługi bazy danych (zapisywanie profili graczy i ich statystyk)
+- coś do obsługi gry przez internet
