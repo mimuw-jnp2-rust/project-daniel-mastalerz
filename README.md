@@ -23,3 +23,11 @@ W drugiej części punkt piąty - możliwość gry przez internet.
 - Bevy
 - coś do obsługi bazy danych (zapisywanie profili graczy i ich statystyk)
 - coś do obsługi gry przez internet
+
+## Postępy po pierwszej części
+ - Zaimplementowana została rozgrywka między dwoma graczami, menu, oraz możliwość wyboru boiska. Punkty o zapisywaniu stanu gry oraz profilu gracza niestety pominięte przez brak czasu :(
+ - Sterowanie: gracz czerwony – poruszanie się poprzez WASD, strzał spacją, gracz niebieski – poruszanie się poprzez strzałki, strzał prawym controlem.
+ - Rozgrywka została zaimplementowana za pomocą biblioteki Bevy, poszczególne fragmenty gry obsługiwane są jako "systemy", które program wykonuje albo na początku programu, albo cały czas w sposób ciągły.
+ - Została zaimplementowana obsługa kolizji (liczenie nowych wektorów prędkości za pomocą różnych wzorów).
+ - W menu są trzy przyciski, możemy wyjść, zmienić boisko oraz rozpocząć grę. Po rozpoczęciu gry nie możemy już powrócić do menu, jeśli nie wyłączymy gry.
+ - Sama rozgrywka trwa do momentu strzelenia przez któregoś z graczy trzech bramek. Jeśli tak się stanie, zwyciężca zostanie ogłoszony i gra rozpocznie się od nowa.
