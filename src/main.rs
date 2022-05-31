@@ -364,11 +364,9 @@ fn collision_system_red(
     if player_ball_distance < PLAYER_RADIUS + BALL_RADIUS {
         // If space pressed, shoot the ball
         if kb.pressed(KeyCode::Space) {
-            println!("Shoot");
             let diff_x = transform_red.translation.x - transform_ball.translation.x;
             let diff_y = transform_red.translation.y - transform_ball.translation.y;
             let angle = diff_y.atan2(diff_x);
-            println!("{}", angle);
             velocity_ball.y += -5.0 * angle.sin();
             velocity_ball.x += -5.0 * angle.cos();
         }
@@ -521,7 +519,6 @@ fn goal_system(
             score.blue += 1;
         }
         text.sections[0].value = format!("Score: {}–{}", score.red, score.blue);
-        println!("Red score: {}", score.red);
         transform_ball.translation.x = 0.;
         transform_ball.translation.y = 0.;
 
